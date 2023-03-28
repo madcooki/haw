@@ -1,0 +1,18 @@
+{
+  "resources/images/zebra.png": {
+    "file": "assets/zebra-32e3f693.png",
+    "src": "resources/images/zebra.png"
+  },
+  "resources/js/app.css": {
+    "file": "assets/app-6c2b5aea.css",
+    "src": "resources/js/app.css"
+  },
+  "resources/js/app.js": {
+    "css": [
+      "assets/app-6c2b5aea.css"
+    ],
+    "file": "assets/app-c7d530fa.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}
