@@ -91,7 +91,7 @@
             </div>
           </div>
           <div class="column is-3">
-            <div class="body-block">
+            <div class="body-block sidebar">
               @yield('sidebar')
             </div>
           </div>

@@ -12,9 +12,14 @@
 }
 
 .first-section {
-  margin-top: 50px;
+  margin-top: 2rem;
 }
 
 .footer {
   border-top: 0.3rem solid #000000;
+}
+
+.sidebar {
+  position: sticky;
+  top: 5rem;
 }

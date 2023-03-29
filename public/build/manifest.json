@@ -4,14 +4,14 @@
     "src": "resources/images/zebra.png"
   },
   "resources/js/app.css": {
-    "file": "assets/app-131f28d8.css",
+    "file": "assets/app-2447652c.css",
     "src": "resources/js/app.css"
   },
   "resources/js/app.js": {
     "css": [
-      "assets/app-131f28d8.css"
+      "assets/app-2447652c.css"
     ],
-    "file": "assets/app-ad26a65f.js",
+    "file": "assets/app-bf344f97.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }
