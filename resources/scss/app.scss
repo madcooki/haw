@@ -7,19 +7,24 @@
   border: 0.3rem solid #000000;
 }
 
+.body-column {
+  margin-top: 5.25rem;
+}
+
 .navbar {
   border-bottom: 0.3rem solid #000000;
 }
 
-.first-section {
-  margin-top: 2rem;
-}
-
 .footer {
   border-top: 0.3rem solid #000000;
+  margin-top: 1.5rem;
 }
 
 .sidebar {
   position: sticky;
   top: 5rem;
+}
+
+.section {
+  padding: 0rem;
 }

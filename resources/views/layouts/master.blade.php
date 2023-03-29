@@ -82,15 +82,15 @@
       </div>
     </nav>
 
-    <section class="section first-section">
+    <section class="section">
       <div class="container">
         <div class="columns">
-          <div class="column is-9">
+          <div class="column is-9 body-column">
             <div class="body-block">
               @yield('body')
             </div>
           </div>
-          <div class="column is-3">
+          <div class="column is-3 body-column">
             <div class="body-block sidebar">
               @yield('sidebar')
             </div>
