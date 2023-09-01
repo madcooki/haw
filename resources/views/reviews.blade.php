@@ -1,5 +1,118 @@
-@include('layouts.article', array(
-    'title' => 'Reviews',
-    'subtitle' => 'Subtitle goes here...',
-    'article' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, est vel ultricies condimentum, enim nisl scelerisque mauris, sodales ornare tortor tortor ac nunc. Pellentesque dictum ipsum egestas dolor tincidunt, vel molestie arcu iaculis. Donec ac mollis quam. Proin feugiat arcu eros, quis auctor turpis facilisis eget. Praesent scelerisque sem vel enim sodales, non ultricies metus convallis. Donec luctus tellus nec finibus tristique. Curabitur scelerisque ut mauris vel hendrerit. Proin eleifend varius venenatis. Proin velit magna, commodo vitae ante ac, dictum interdum nunc. Nam tempor neque vitae elit dictum auctor. Integer quis pharetra ex. In quam purus, rutrum euismod pharetra a, suscipit nec enim.'
-))
+@extends('layouts.master')
+
+@section('body')
+<div class="content">
+
+  <h3>See what our customers are saying...</h3>
+  <br />
+
+  <div class="box">
+    <article class="media">
+      <div class="media-content content">
+        <p>
+          <strong>John Smith</strong> <small>Dec 13, 2020</small>
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+        </p>
+      </div>
+    </article>
+  </div>
+
+  <div class="box">
+    <article class="media">
+      <div class="media-content content">
+        <p>
+          <strong>John Smith</strong> <small>Dec 13, 2020</small>
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+        </p>
+      </div>
+    </article>
+  </div>
+
+  <div class="box">
+    <article class="media">
+      <div class="media-content content">
+        <p>
+          <strong>John Smith</strong> <small>Dec 13, 2020</small>
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+        </p>
+      </div>
+    </article>
+  </div>
+
+  <div class="box">
+    <article class="media">
+      <div class="media-content content">
+        <p>
+          <strong>John Smith</strong> <small>Dec 13, 2020</small>
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+        </p>
+      </div>
+    </article>
+  </div>
+
+  <div class="box">
+    <article class="media">
+      <div class="media-content content">
+        <p>
+          <strong>John Smith</strong> <small>Dec 13, 2020</small>
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+        </p>
+      </div>
+    </article>
+  </div>
+
+  <div class="box">
+    <article class="media">
+      <div class="media-content content">
+        <p>
+          <strong>John Smith</strong> <small>Dec 13, 2020</small>
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+        </p>
+      </div>
+    </article>
+  </div>
+
+  <div class="box">
+    <article class="media">
+      <div class="media-content content">
+        <p>
+          <strong>John Smith</strong> <small>Dec 13, 2020</small>
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+        </p>
+      </div>
+    </article>
+  </div>
+
+  <div class="box">
+    <article class="media">
+      <div class="media-content content">
+        <p>
+          <strong>John Smith</strong> <small>Dec 13, 2020</small>
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+        </p>
+      </div>
+    </article>
+  </div>
+
+  <div class="box">
+    <article class="media">
+      <div class="media-content content">
+        <p>
+          <strong>John Smith</strong> <small>Dec 13, 2020</small>
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+        </p>
+      </div>
+    </article>
+  </div>
+
+</div>
+@endsection

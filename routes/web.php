@@ -14,11 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
-});
-
-Route::get('/rants', function () {
-    return view('rants');
+    return view('about');
 });
 
 Route::get('/reviews', function () {
@@ -31,20 +27,4 @@ Route::get('/services/ac', function () {
 
 Route::get('/services/appliances', function () {
     return view('services/appliances');
-});
-
-Route::get('/services/shifting-gears', function () {
-    return view('services/shifting-gears');
-});
-
-Route::get('/services/artz-amazing', function () {
-    return view('services/artz-amazing');
-});
-
-Route::get('/services/housesitting', function () {
-    return view('services/housesitting');
-});
-
-Route::get('/services/healthy-home', function () {
-    return view('services/healthy-home');
 });
