@@ -1,0 +1,131 @@
+$haw_green: #6cbf49;
+$haw_pink: #ff00b8;
+$haw_blue: #1c377a;
+
+$primary: $haw_pink;
+
+@import 'bulma/bulma.sass';
+
+$navbar_height: 7rem;
+$block_border_thickness: 0.3rem;
+
+$gap_width: 1.5rem;
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  //background-attachment: fixed;
+  //background-image: url('../images/zebra.png');
+}
+
+.parallax-zebra {
+  background-image: url('../images/zebra.png');
+  height: 50%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-forest {
+  background-image: url('../images/forest.jpg');
+  height: 50%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-repairman {
+  background-image: url('../images/repairman.webp');
+  height: 50%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.body-block {
+  background-color: $white;
+  padding: 2rem;
+  border-radius: 3rem;
+  border: $block_border_thickness solid $black;
+}
+
+.body-columns {
+  padding: $gap_width;
+}
+
+.navbar {
+  border-bottom: $block_border_thickness solid $black;
+  min-height: $navbar_height;
+}
+
+.navbar-item img {
+  max-height: 4.7rem;
+}
+
+.navbar-link:not(.is-arrowless)::after {
+  border-color: $black;
+}
+
+@media screen and (min-width: $desktop) {
+  .navbar-dropdown {
+    border: $block_border_thickness solid $black;
+  }
+}
+
+@media screen and (max-width: $desktop) {
+  .navbar-menu {
+    box-shadow: none;
+  }
+}
+
+
+body.has-navbar-fixed-top {
+  padding-top: $navbar_height;
+}
+
+section{
+  border-bottom: $block_border_thickness solid $black;
+}
+
+.filter {
+  display: flex;
+}
+
+.filter.blue {
+  background-color: rgba($haw_blue, 0.95);
+}
+
+.filter.pink {
+  background-color: rgba($haw_pink, 0.95);
+}
+
+.filter.green {
+  background-color: rgba($haw_green, 0.95);
+}
+
+.footer {
+  margin-top: auto;
+  background-color: $white;
+}
+
+.sticky-sidebar {
+  position: sticky;
+  top: $navbar_height + $gap_width;
+}
+
+.call-us {
+  width: -moz-available;
+  width: -webkit-fill-available;
+}
+
+.box {
+  border-radius: 1rem;
+}
+
+.input, .textarea, .button {
+  border-radius: 0.5rem;
+}

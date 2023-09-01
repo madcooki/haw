@@ -1,0 +1,50 @@
+{
+  "resources/images/forest.jpg": {
+    "file": "assets/forest-cdb3d46c.jpg",
+    "src": "resources/images/forest.jpg"
+  },
+  "resources/images/logo.avif": {
+    "file": "assets/logo-16dbe72f.avif",
+    "src": "resources/images/logo_small.avif"
+  },
+  "resources/images/logo.jpg": {
+    "file": "assets/logo-7f770ae6.jpg",
+    "src": "resources/images/logo.jpg"
+  },
+  "resources/images/logo_small.avif": {
+    "file": "assets/logo-16dbe72f.avif",
+    "src": "resources/images/logo_small.avif"
+  },
+  "resources/images/logo_small.jpg": {
+    "file": "assets/logo_small-3e34f96f.jpg",
+    "src": "resources/images/logo_small.jpg"
+  },
+  "resources/images/repairman.webp": {
+    "file": "assets/repairman-b96cf01e.webp",
+    "src": "resources/images/repairman.webp"
+  },
+  "resources/images/small_logo.jpg": {
+    "file": "assets/small_logo-4e3f9e79.jpg",
+    "src": "resources/images/small_logo.jpg"
+  },
+  "resources/images/zebra.png": {
+    "file": "assets/zebra-32e3f693.png",
+    "src": "resources/images/zebra.png"
+  },
+  "resources/js/app.css": {
+    "file": "assets/app-285836ee.css",
+    "src": "resources/js/app.css"
+  },
+  "resources/js/app.js": {
+    "assets": [
+      "assets/zebra-32e3f693.png",
+      "assets/forest-cdb3d46c.jpg"
+    ],
+    "css": [
+      "assets/app-285836ee.css"
+    ],
+    "file": "assets/app-6110a6fe.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}
