@@ -5,7 +5,7 @@
 
 @if(!is_null($email))
   <br />
-  <span><strong>Email:</strong> <a href="mailto:{{ $email }}?subject={{ $subject }}&body=Hello {{ strtok($name, " ") }},%0A%0A%0A">{{ $email }}</a></span>
+  <span><strong>Email:</strong> <a href="mailto:{{ $email }}">{{ $email }}</a></span>
 @endif
 
 @if(!is_null($phone))
