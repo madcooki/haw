@@ -32,18 +32,19 @@
     "src": "resources/images/zebra.png"
   },
   "resources/js/app.css": {
-    "file": "assets/app-285836ee.css",
+    "file": "assets/app-d5212c7e.css",
     "src": "resources/js/app.css"
   },
   "resources/js/app.js": {
     "assets": [
       "assets/zebra-32e3f693.png",
-      "assets/forest-cdb3d46c.jpg"
+      "assets/forest-cdb3d46c.jpg",
+      "assets/repairman-b96cf01e.webp"
     ],
     "css": [
-      "assets/app-285836ee.css"
+      "assets/app-d5212c7e.css"
     ],
-    "file": "assets/app-6110a6fe.js",
+    "file": "assets/app-841eb650.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }
