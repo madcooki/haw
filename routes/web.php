@@ -55,10 +55,10 @@ Route::post('/contact', function (Request $request) {
             'max:65535',
         ],
     ], [
-        'name.required' => 'We need to know your name to address you properly!',
+        'name.required' => 'We need your name so that we can properly address you!',
         'email.required_without' => 'An email address is required if no phone number is provided.',
         'phone.required_without' => 'A phone number is required if no email address is provided.',
-        'message.required' => 'We need to know what you want to talk about. Don\'t be shy!',
+        'message.required' => 'We need some context -- don\'t be shy!',
         'email.email' => 'This looks like an invalid email address...',
         'phone.regex' => 'This looks like an invalid phone number...',
         'max' => 'This field must have a value less than :max characters in length.',
