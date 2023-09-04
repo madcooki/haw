@@ -48,7 +48,7 @@ class ContactFormNotification extends Mailable
                 'email' => $this->email,
                 'phone' => $this->phone,
                 'message_field' => $this->message_field,
-                'time' => Carbon::now()->timezone('America/New_York')->format('F j, Y h:i:s (e)'),
+                'subject' => $this->envelope()->subject,
             ]
         );
     }

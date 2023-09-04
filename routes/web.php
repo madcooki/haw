@@ -48,7 +48,7 @@ Route::post('/contact', function (Request $request) {
             'required_without:email',
             'max:12',
             'nullable',
-            'regex:^\d{3}(-)?\d{3}(-)?\d{4}^',
+            'regex:/^\d{3}(-| )?\d{3}(-| )?\d{4}$/',
         ],
         'message' => [
             'required',
@@ -59,8 +59,8 @@ Route::post('/contact', function (Request $request) {
         'email.required_without' => 'An email address is required if no phone number is provided.',
         'phone.required_without' => 'A phone number is required if no email address is provided.',
         'message.required' => 'We need some context -- don\'t be shy!',
-        'email.email' => 'This looks like an invalid email address...',
-        'phone.regex' => 'This looks like an invalid phone number...',
+        'email.email' => 'This looks like an invalid email address.',
+        'phone.regex' => 'This looks like an invalid US phone number.<br /><br />Valid formats include:<br />555-555-5555<br />555 555 5555<br />5555555555',
         'max' => 'This field must have a value less than :max characters in length.',
     ]);
 
@@ -68,8 +68,8 @@ Route::post('/contact', function (Request $request) {
     if ($validated) {
         $contactFormSubmission = new ContactFormSubmission();
         $contactFormSubmission->name = ucwords(strtolower($validator->validated()['name']));
-        $contactFormSubmission->email = $validator->validated()['email'];
-        $contactFormSubmission->phone = preg_replace('/^(\d{3})(\d{3})(\d{4})$/', '+1 $1-$2-$3', str_replace('-', '', $validator->validated()['phone']));
+        $contactFormSubmission->email = is_null($validator->validated()['email']) ? null : $validator->validated()['email'];
+        $contactFormSubmission->phone = is_null($validator->validated()['phone']) ? null : preg_replace('/^(\d{3})(-| )?(\d{3})(-| )?(\d{4})$/', '+1 $1-$3-$5', $validator->validated()['phone']);
         $contactFormSubmission->message = $validator->validated()['message'];
         $contactFormSubmission->save();
 

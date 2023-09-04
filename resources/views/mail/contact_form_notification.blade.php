@@ -2,12 +2,18 @@
 <br />
 <br />
 <span><strong>Name:</strong> {{ $name }}</span>
+
+@if(!is_null($email))
+  <br />
+  <span><strong>Email:</strong> <a href="mailto:{{ $email }}?subject={{ $subject }}&body=Hello {{ strtok($name, " ") }},%0A%0A%0A">{{ $email }}</a></span>
+@endif
+
+@if(!is_null($phone))
+  <br />
+  <span><strong>Phone:</strong> <a href="tel:{{ $phone }}">{{ $phone }}</a></span>
+@endif
+
 <br />
-<span><strong>Email:</strong> {{ $email }}</span>
-<br />
-<span><strong>Phone:</strong> {{ $phone }}</span>
 <br />
 <br />
-<span><strong>Message:</strong></span>
-<br />
-<span>{{ $message_field }}</span>
+<pre>{{ $message_field }}</pre>

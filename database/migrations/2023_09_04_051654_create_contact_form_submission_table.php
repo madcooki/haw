@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('email', 255)->nullable();
             $table->string('phone', 15)->nullable();
             $table->text('message');
-            $table->timestampTz('recorded_at');
+            $table->timestamp('created_at');
         });
     }
 

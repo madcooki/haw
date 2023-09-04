@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 
 class ContactFormSubmission extends Model
@@ -11,7 +12,7 @@ class ContactFormSubmission extends Model
 
     public function save(array $options = [])
     {
-        $this->recorded_at = $this->freshTimestampString();
+        $this->created_at = Carbon::now();
         parent::save();
     }
 }
