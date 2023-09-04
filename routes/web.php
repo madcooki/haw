@@ -36,27 +36,32 @@ Route::post('/contact', function (Request $request) {
     $validator = Validator::make($request->all(), [
         'name' => [
             'required',
+            'max:255',
         ],
         'email' => [
             'required_without:phone',
+            'max:255',
             'nullable',
             'email:strict,dns,spoof',
         ],
         'phone' => [
             'required_without:email',
+            'max:12',
             'nullable',
             'regex:^\d{3}(-)?\d{3}(-)?\d{4}^',
         ],
         'message' => [
             'required',
+            'max:65535',
         ],
     ], [
         'name.required' => 'We need to know your name to address you properly!',
         'email.required_without' => 'An email address is required if no phone number is provided.',
-        'email.email' => 'This looks like an invalid email address...',
         'phone.required_without' => 'A phone number is required if no email address is provided.',
-        'phone.regex' => 'This looks like an invalid phone number...',
         'message.required' => 'We need to know what you want to talk about. Don\'t be shy!',
+        'email.email' => 'This looks like an invalid email address...',
+        'phone.regex' => 'This looks like an invalid phone number...',
+        'max' => 'This field must have a value less than :max characters in length.',
     ]);
 
     $validated = $validator->passes();

@@ -93,7 +93,7 @@
                           </a>
                         </div>
                         <div class="control is-expanded">
-                          <input name="name" class="input is-rounded" type="text" placeholder="John Doe">
+                          <input class="input is-rounded" name="name" type="text" placeholder="John Doe">
                         </div>
                       </div>
                     </div>
@@ -109,7 +109,7 @@
                           </a>
                         </div>
                         <div class="control is-expanded">
-                          <input name="email" class="input is-rounded" type="text" placeholder="johndoe@example.com">
+                          <input class="input is-rounded" name="email" type="text" placeholder="johndoe@example.com">
                         </div>
                       </div>
                     </div>
@@ -126,7 +126,7 @@
                           </a>
                         </div>
                         <div class="control is-expanded">
-                          <input name="phone" class="input is-rounded" type="tel" placeholder="555-555-5555">
+                          <input class="input is-rounded" name="phone" type="tel" placeholder="555-555-5555">
                         </div>
                       </div>
                     </div>
@@ -134,7 +134,7 @@
                     <div class="field">
                       <label class="label">Message</label>
                       <div class="control">
-                        <textarea name="message" class="textarea is-rounded" placeholder="Hello, I'm inquiring about..."></textarea>
+                        <textarea class="textarea is-rounded" name="message" placeholder="Hello, I'm inquiring about..."></textarea>
                       </div>
                     </div>
 

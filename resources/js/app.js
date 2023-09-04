@@ -59,8 +59,8 @@ $('#contact_form').on('submit', function() {
         var field = form.find('[name=' + fieldName + ']');
         var topLevelFieldDiv = field.closest('.field:not(.has-addons)');
         field.addClass('is-danger');
-        data.errors[fieldName].forEach(function(error) {
-          topLevelFieldDiv.append('<span class="help is-danger">' + error + '</span>');
+        data.errors[fieldName].forEach(function(error, i) {
+          topLevelFieldDiv.append('<span class="help is-danger">' + (data.errors[fieldName].length > 1 ? ((i + 1) + ') ') : '') + error + '</span>');
         });
       });
     }
