@@ -1,5 +1,6 @@
 <?php
 
+use App\Mail\ContactFormNotification;
 use App\Models\ContactFormSubmission;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
@@ -66,6 +67,14 @@ Route::post('/contact', function (Request $request) {
         $contactFormSubmission->phone = preg_replace('/^(\d{3})(\d{3})(\d{4})$/', '+1 $1-$2-$3', str_replace('-', '', $validator->validated()['phone']));
         $contactFormSubmission->message = $validator->validated()['message'];
         $contactFormSubmission->save();
+
+        Mail::to('nathanielbradleyrobb@gmail.com')->send(new ContactFormNotification(
+            $contactFormSubmission->name,
+            $contactFormSubmission->email,
+            $contactFormSubmission->phone,
+            $contactFormSubmission->message
+        ));
+
         return response()->json([
             'is_success' => $validated,
             'errors' => [],

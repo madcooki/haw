@@ -182,7 +182,7 @@
       <div class="content has-text-centered">
         @php
           $start_year = "2023";
-          $current_year = date('Y');
+          $current_year = Carbon\Carbon::now()->format('Y');
         @endphp
         <p>© {{ $start_year == $current_year ? $start_year : $start_year . " - " . $current_year }} Mad Cooki, LLC. All rights reserved.</p>
       </div>
