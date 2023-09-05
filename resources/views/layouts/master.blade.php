@@ -92,7 +92,7 @@
                           </a>
                         </div>
                         <div class="control is-expanded">
-                          <input class="input" name="name" type="text" placeholder="John Doe">
+                          <input class="input is-rounded" name="name" type="text" placeholder="John Doe">
                         </div>
                       </div>
                     </div>
