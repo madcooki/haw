@@ -63,15 +63,15 @@
 
     <section class="parallax-zebra">
       <div class="is-flex filter-blue">
-        <div class="container">
+        <div class="container is-max-desktop">
           <div class="body-block-columns">
             <div class="columns is-desktop">
-              <div class="column is-8-desktop is-9-fullhd">
+              <div class="column is-8-desktop">
                 <div class="body-block">
                   @yield('body')
                 </div>
               </div>
-              <div class="column is-4-desktop is-3-fullhd">
+              <div class="column is-4-desktop">
                 <div class="body-block sticky-sidebar">
 
                   <h1 class="title is-4">Send Us a Message</h1>
