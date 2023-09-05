@@ -13,8 +13,7 @@
       <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item" href="{{ url('/') }}">
-            <img src="{{ Vite::asset('resources/images/logo_small.jpg') }}" />
-            <!--<img src="https://bulma.io/images/bulma-logo.png" />-->
+            <img src="{{ Vite::asset('resources/images/logo.jpg') }}" />
           </a>
           <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="main_menu">
             <span aria-hidden="true"></span>
