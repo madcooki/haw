@@ -5,7 +5,7 @@
   },
   "resources/images/logo.avif": {
     "file": "assets/logo-16dbe72f.avif",
-    "src": "resources/images/logo.avif"
+    "src": "resources/images/logo_small.avif"
   },
   "resources/images/logo.jpg": {
     "file": "assets/logo-7f770ae6.jpg",
@@ -13,7 +13,7 @@
   },
   "resources/images/logo_small.avif": {
     "file": "assets/logo-16dbe72f.avif",
-    "src": "resources/images/logo.avif"
+    "src": "resources/images/logo_small.avif"
   },
   "resources/images/logo_small.jpg": {
     "file": "assets/logo_small-3e34f96f.jpg",
