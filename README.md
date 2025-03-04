@@ -2,6 +2,6 @@ This project involved developing a professional website for a small business to 
 
 The project was discontinued before full deployment, but the completed work stands as a strong example of my expertise in Laravel development, email server integration, and best practices for maintainable and scalable web applications.
 
-Key Challenge: Configuring the contact form to reliably send emails via an external SMTP server while maintaining security proved challenging. This required fine-tuning SMTP settings, handling authentication, and implementing error logging to ensure successful message delivery.
+Configuring the contact form to reliably send emails via an external SMTP server while maintaining security proved challenging. This required fine-tuning SMTP settings, handling authentication, and implementing error logging to ensure successful message delivery.
 
 Key Technologies: Laravel, PHP, HTML, CSS, SASS, JavaScript, MySQL, SMTP
